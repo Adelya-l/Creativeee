@@ -1,0 +1,596 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+/*!!!!!!!!*/
+
+
+
+/*header*/
+header {
+    position: absolute;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    margin: auto;
+    left: 0;
+    top: 100px;
+    background: #717171;
+}
+
+.list-items {
+    display: flex;
+    align-items: center;
+    width: 710px;
+    justify-content: space-between;
+}
+
+.list-item {
+    padding: 30px 20px;
+}
+
+.home {
+    padding-left: 100px;
+}
+
+.list-item:hover:before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    bottom: 30px;
+    margin: auto;
+    transition: 3s;
+    border: 1px solid #10739d;
+}
+
+.hover-item:hover:before{
+    content: "";
+    position: absolute;
+    width: 65px;
+    bottom: 30px;
+    margin: auto;
+    transition: 3s;
+    border: 1px solid #10739d;
+}
+
+.hover:hover:before{
+    content: "";
+    position: absolute;
+    width: 82px;
+    bottom: 30px;
+    margin: auto;
+    transition: 3s;
+    border: 1px solid #10739d;
+}
+
+.list-item a {
+    color: white;
+}
+
+.list-item a:hover {
+    text-decoration: none;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon a {
+    color: white;
+    padding: 20px 5px;
+}
+
+.icon a:hover {
+    text-decoration: none;
+}
+/*hero-content*/
+#hero-content {
+    background: url(../images/photo5355328484853001318.jpg);
+}
+
+.power {
+    padding: 160px;
+    text-align: center;
+}
+
+.header-title {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    font-size: 90px;
+}
+
+.description {
+    margin: 0 0 50px;
+    text-transform: uppercase;
+    color: #1c5a9e;
+    font-size: 35px;
+}
+
+.power p {
+    color: white;
+    font-size: 18px;
+}
+
+.icon-angle-down {
+    position: absolute;
+    display: inline-block;
+    padding: 7px 8px;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    font-size: 22px;
+}
+
+.icon-angle-down:hover{
+    transition: none;
+    text-decoration: none;
+    color: white;
+}
+
+/*agency*/
+#agency {
+    padding-top: 75px;
+    background: #11739e;
+}
+
+.were {
+    position: relative;
+}
+
+.were :after {
+    position: absolute;
+    content: "W";
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 200px;
+    bottom: -95px;
+    opacity: 0.1;
+}
+
+.were h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.around {
+    text-align: center;
+    color: white;
+    display: flex;
+    padding: 90px 0;
+}
+
+.icon-all {
+    background: #2d85aa;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid #2d85aa;
+    padding: 13px;
+    font-size: 50px;
+    width: 110px;
+    height: 110px;
+}
+
+.icon-edit {
+    padding: 10px;
+}
+
+.title {
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.text {
+    font-size: 13px;
+}
+
+/*block*/
+#block {
+    padding-bottom: 75px;
+    margin: 0;
+    color: #e9e9e9;
+}
+
+.photo img {
+    width: 100%;
+    height: 340px;
+}
+
+.team {
+    height: 339px;
+    background: #1d1d1d;
+    margin: 0;
+    padding: 50px 74px;
+}
+
+.team-item {
+    background: #f3f3f3;
+    color: #212121;
+    height: 339px;
+    margin: 0;
+    padding: 61px 22px 0 95px;
+}
+
+/*lets*/
+#lets {
+    padding: 0 0 40px 0;
+    text-align: center;
+}
+
+.solutions {
+    position: relative;
+    font-size: 38px;
+    line-height: 45px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 120px 0 40px 0;
+}
+
+.fresh {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37px;
+}
+
+.people {
+    width: 219px;
+}
+
+.with {
+    margin: 10px 0;
+    color: #11749e;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.text-p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.blog {
+    display: flex;
+}
+
+.solutions:after {
+    position: absolute;
+    content: "B";
+    left: 0;
+    right: 0;
+    padding: 40px 0 0 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 200px;
+    margin: -50px;
+    opacity: 0.1;
+}
+
+/*write*/
+#write {
+    background: #11749e;
+    padding: 65px 0;
+}
+
+.col {
+    display: flex;
+    background: #11749e;
+    margin: 31px 0 54px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+    width: 70px;
+    height: 70px;
+    color: #FFFFFF;
+}
+
+.sit {
+    color: #ffff;
+    font-size: 14px;
+    margin-left: 25px;
+}
+
+/*iphone*/
+#iphone {
+    color: white;
+}
+
+.col-col {
+    padding: 190px 0;
+}
+
+.col- img {
+    padding: 55px 0;
+    float: right;
+}
+
+.uni {
+    display: flex;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37px;
+}
+
+.text-text {
+    font-size: 17px;
+}
+
+.circle {
+    font-size: 15px;
+    margin-bottom: 25px;
+    padding: 10px;
+    background-color: #11749e;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.design {
+    width: 80%;
+}
+
+.code {
+    width: 90%;
+}
+
+/*our-team*/
+#our-team {
+    padding-top: 30px;
+}
+
+.have:after {
+    position: absolute;
+    content: "T";
+    left: 0;
+    right: 0;
+    padding: 40px 0 0 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 200px;
+    margin: -50px;
+    opacity: 0.1;
+}
+
+.have {
+    position: relative;
+    font-size: 38px;
+    line-height: 45px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 120px 0 40px 0;
+}
+
+.have {
+    padding-bottom: 100px;
+}
+
+.are {
+    color: #3e3e3e;
+}
+
+.item {
+    padding: 0 20px 0 0;
+}
+
+.blog-item {
+    text-align: center;
+}
+
+.snow{
+    position: relative;
+    top: -50px;
+    background: white;
+    width: 178px;
+    left: 20px;
+}
+
+.lady {
+    text-transform: uppercase;
+    color: #11749e;
+    font-size: 24px;
+    margin: 0;
+}
+
+.text-p {
+    font-size: 14px;
+}
+
+/*contact*/
+#contact {
+    padding: 140px 0 80px;
+    color: white;
+    background: url(https://jakubgreziak.github.io/creativespsd/img/bg-contact.png);
+}
+
+.your-project{
+    position: relative;
+}
+
+.your-project h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.your-project h2:after {
+    position: absolute;
+    content: "C";
+    left: 0;
+    right: 0;
+    top: -103px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 200px;
+    opacity: 0.2;
+    color: white;
+}
+
+.submit {
+    padding: 10px 40px;
+    height: 50px;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    text-transform: uppercase;
+}
+
+.submit:hover{
+    transition-duration: 2s;
+    background: #10739d;
+}
+
+.form-control1, .form-control2, .form-control3 {
+    background: none;
+    border: none;
+}
+
+.group {
+    padding-bottom: 24px;
+}
+
+.group .form-control {
+    border: 1px solid #cacaca;
+    padding: 20px 20px 55px;
+}
+
+.form {
+    padding-top: 70px;
+}
+
+.form-control {
+    background: none;
+    border-radius: 0;
+}
+
+.form-control:hover {
+    border: 1px solid #11739e;
+}
+
+.form-control1, .form-control2 {
+    margin: 0 20px 0 0;
+}
+
+.form-control:focus {
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+input {
+    padding: 18px 20px;
+    width: 100%;
+    background-color: inherit;
+    font-size: 15px;
+    border: 1px solid #cacaca;
+}
+
+label {
+    width: 300px;
+    color: white;
+}
+
+.send{
+    justify-content: center;
+    display: flex;
+}
+
+/*footer*/
+#footer {
+    color: white;
+    padding: 30px 0;
+    background: #000000bf;
+}
+
+.low-text {
+    margin-bottom: 0;
+}
+
+.freebi {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*!!!!!!!*/
+.line{
+    width: 45px;
+    height: 40px;
+    display: none;
+    align-items: center;
+    transition: .2s;
+}
+.line span{
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background: white;
+    position: relative;
+}
+.line span:before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    top: -10px;
+    background: white;
+}
+.line span:after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    bottom: -10px;
+    background: white;
+}
+.show span{
+    background: transparent;
+}
+.show span:before{
+    transform: rotate(-45deg);
+    top:0;
+    margin: 0;
+    bottom: 0;
+}
+.show span:after{
+    transform: rotate(45deg);
+    top:0;
+    margin: 0;
+    bottom: 0;
+}
